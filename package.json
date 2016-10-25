@@ -1,0 +1,32 @@
+{
+  "name": "forte-gui",
+  "version": "1.0.0",
+  "description": "Unify a list of public SSH keys under a single username on Linux servers running OpenSSH.",
+  "main": "index.js",
+  "author": "Michael Yockey",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "css-loader": "^0.25.0",
+    "electron": "^1.4.3",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "jquery": "^3.1.1",
+    "node-sass": "^3.10.1",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-redux": "^4.4.5",
+    "redux": "^3.6.0",
+    "redux-logger": "^2.7.0",
+    "redux-persist": "^4.0.0-alpha6",
+    "redux-thunk": "^2.1.0",
+    "sass-loader": "^4.0.2",
+    "ssh-fingerprint": "^0.0.1",
+    "store": "^1.3.20",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2",
+    "whatwg-fetch": "^1.0.0"
+  }
+}
