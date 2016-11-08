@@ -1,12 +1,15 @@
-import React from 'react';
-import AvailablePublicKeyList from './public_keys/available_public_key_list';
-import PublicKeyForm from './public_keys/public_key_form';
+import React, { Component } from 'react';
+import Navigation from './navigation';
 
-const ForteApplication = () => (
-  <div>
-    <PublicKeyForm />
-    <AvailablePublicKeyList />
-  </div>
-)
+class ForteApplication extends Component {
+  render() {
+    return (
+      <div>
+        <Navigation />
+        {this.props.children}
+      </div>
+    )
+  }
+}
 
-export default ForteApplication
+export default ForteApplication;

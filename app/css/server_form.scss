@@ -1,0 +1,16 @@
+.serverform {
+  display: flex;
+
+  &__hostname {
+    border-radius: 10px 0 0 10px;
+    flex-grow: 1;
+  }
+
+  &__username {
+    flex-grow: 1;
+  }
+
+  &__submit {
+    border-radius: 0 10px 10px 0;
+  }
+}

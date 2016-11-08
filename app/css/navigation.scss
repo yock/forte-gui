@@ -1,0 +1,17 @@
+nav {
+  display: flex;
+  justify-content: center;
+
+  ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+
+    li {
+      display: flex;
+      justify-content: center;
+      flex-grow: 1;
+      padding: 10px 0 0 10px;
+    }
+  }
+}

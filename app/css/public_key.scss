@@ -18,4 +18,8 @@
   &__fingerprint {
     flex-grow: 1;
   }
+
+  &__delete {
+    cursor: pointer;
+  }
 }

@@ -2,6 +2,7 @@ import 'whatwg-fetch';
 
 class Github {
   static get(path) {
+    console.log(path);
     return Promise.resolve(
       fetch(`https://api.github.com/${path}`).then((response) => {
         return response.text();

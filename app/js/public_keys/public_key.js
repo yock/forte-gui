@@ -1,13 +1,23 @@
 import React, { Component } from 'react';
 import fingerprint from 'ssh-fingerprint';
 import store from 'store';
+import { connect } from 'react-redux';
 
-const PublicKey = ({comment, sshKey}) => (
-  <li className="publickey">
-    <span className="publickey__comment">{comment}</span>
-    <span className="publickey__fingerprint">{fingerprint(sshKey)}</span>
-    <span className="publickey__delete">&times;</span>
-  </li>
-)
+class PublicKey extends Component {
+  render() {
+    return (
+      <li className="publickey">
+        <span className="publickey__comment">{this.props.comment}</span>
+        <span className="publickey__fingerprint">{fingerprint(this.props.sshKey)}</span>
+        <span
+          className="publickey__delete"
+          onClick={ (e) => {
+            e.preventDefault();
+            this.props.deleteHandler(this.props.id);
+          }}>&times;</span>
+      </li>
+    )
+  }
+}
 
 export default PublicKey;

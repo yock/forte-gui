@@ -1,8 +1,9 @@
 import { combineReducers } from 'redux';
-import publicKeys from './public_keys/reducer';
+import { publicKeys, publicKeysUI } from './public_keys/reducers';
 
 const forteApp = combineReducers({
-  publicKeys
+  publicKeys,
+  publicKeysUI
 });
 
 export default forteApp;
