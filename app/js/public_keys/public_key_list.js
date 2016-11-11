@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react';
-import { connect } from 'react-redux';
 import PublicKey from './public_key';
 
 class PublicKeyList extends Component {

@@ -1,0 +1,11 @@
+.server {
+  background-color: $color-complement-1;
+
+  &__hostname {
+    width: 46.5%;
+  }
+
+  &__username {
+    flex-grow: 1;
+  }
+}

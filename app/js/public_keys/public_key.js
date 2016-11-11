@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 class PublicKey extends Component {
   render() {
     return (
-      <li className="publickey">
+      <li className="publickey listitem">
         <span className="publickey__comment">{this.props.comment}</span>
         <span className="publickey__fingerprint">{fingerprint(this.props.sshKey)}</span>
         <span

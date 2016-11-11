@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
-import ServerForm from './server_form';
+import ConnectedServerForm from './connected_server_form';
+import ConnectedServerList from './connected_server_list';
 
 class Servers extends Component {
   render() {
-    return <ServerForm />
+    return (
+      <div>
+        <ConnectedServerForm />
+        <ConnectedServerList />
+      </div>
+    )
   }
 }
 
