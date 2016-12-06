@@ -73,4 +73,7 @@ if [ "$DO_REPLACE" == "yes" ]; then
   commit_replace
 fi
 
+logger "Removing temporary keys file"
+rm forte_keys
+
 logger "Done"

@@ -6,6 +6,7 @@ class Navigation extends Component {
     return (
       <nav>
         <ul>
+          <li><Link to="/">Automation</Link></li>
           <li><Link to="/keys">Keys</Link></li>
           <li><Link to="/servers">Servers</Link></li>
         </ul>
